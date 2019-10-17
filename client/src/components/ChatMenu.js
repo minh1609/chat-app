@@ -24,9 +24,9 @@ function ChatMenu() {
     });
 
     const renderChatContent = () => {
-        return chatContent.map(e => {
+        return chatContent.map((e, id) => {
             return (
-                <div class="alert alert-secondary" role="alert">
+                <div id={id}>
                     <strong>{e.user}</strong>: {e.message}
                 </div>
             );
